@@ -1,0 +1,76 @@
+body,
+h1,
+h2,
+p {
+  padding: 0;
+  margin: 0;
+  user-select: none;
+}
+
+h1,
+h2,
+p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main {
+  display: flex;
+  width: 100%;
+}
+
+label {
+  display: inline-block;
+  width: 6rem;
+}
+
+input[type="text"],
+textarea {
+  width: 80%;
+}
+
+.break-horizontal {
+  height: 2px;
+  width: 100%;
+  border-radius: 25%;
+  background-color: rgba(150, 150, 150, .25);
+}
+
+.project-section {
+  flex: 1 0 auto;
+  width: calc(100% - 80%);
+  padding-left: 0.5rem;
+  border-right: rgba(150, 150, 150, .25) solid 2px;
+}
+
+.todo-section {
+  flex: 1 0 auto;
+  width: calc(100% - 20%);
+  padding-left: 0.5rem;
+}
+
+.project {
+  padding-left: 1rem;
+  border-left: orange solid 4px;
+  background: linear-gradient(to right, #eee, 1%, #fff 100%);
+  cursor: pointer;
+}
+
+.project ~ .project {
+  margin-top: 0.25rem;
+}
+
+.create-project-section {
+  padding-top: 0.5rem;
+  margin-top: 0.5rem;
+  border-top: rgba(150, 150, 150, .25) solid 2px;
+}
+
+.none {
+  display: none;
+}
